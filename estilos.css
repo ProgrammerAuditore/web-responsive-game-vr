@@ -74,7 +74,7 @@ nav ul li a:hover {
 }
 
 .col-1 h2 {
-    font-size: 54px;
+    font-size: 64px;
 }
 
 .col-1 h3 {
@@ -90,7 +90,7 @@ nav ul li a:hover {
     font-weight: 100;
 }
 
-.col-1 p {
+.col-1 h4 {
     margin: 30px 0;
     font-size: 20px;
 }
@@ -104,9 +104,32 @@ button {
     background: linear-gradient(to right, #fb5283, #ff3527);
     border-radius: 6px;
     cursor: pointer;
+    transition: width 0.5s;
 }
 
 button img {
     width: 30px;
     display: none;
 }
+
+button:hover img {
+    display: block;
+}
+
+button:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col-1::after {
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(#ff469f, #ff6062 );
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
